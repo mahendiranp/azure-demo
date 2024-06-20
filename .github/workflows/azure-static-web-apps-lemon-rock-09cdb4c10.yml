@@ -1,8 +1,5 @@
 name: Azure Static Web Apps CI/CD
 
-runs:
-  using: 'node20'
-
 on:
   push:
     branches:
