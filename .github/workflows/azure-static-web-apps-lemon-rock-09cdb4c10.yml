@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          node-version: 16.13.x
+          node-version: 18.0.0
           cache: npm
           submodules: true
           lfs: false
