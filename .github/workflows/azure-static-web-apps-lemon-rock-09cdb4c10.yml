@@ -17,9 +17,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          node-version: '20-v8-canary'
+          node-version: 16.13.x
+          cache: npm
           submodules: true
           lfs: false
+      - name: Install
+        run: npm ci
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
