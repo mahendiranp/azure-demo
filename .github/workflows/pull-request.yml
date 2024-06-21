@@ -10,5 +10,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          test-script: npm test
+          test-script: npm run test
           message: ${{ steps.coverage.outputs.report }}
